@@ -12,7 +12,7 @@ const prisma=new PrismaClient();
 
 app.use(cors({
     origin: 'https://singhstagram-test.vercel.app',
-    credentials:true
+    credentials:true,
 }))
 app.use(express.json({limit: "16kb"}))
 app.use(express.urlencoded({extended: true, limit: '16kb'}))
