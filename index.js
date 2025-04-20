@@ -11,7 +11,7 @@ const PORT=process.env.PORT || 3000;
 const prisma=new PrismaClient();
 
 app.use(cors({
-    origin: ['https://singhstagram-test.vercel.app', 'http://localhost:3000'],
+    origin: ['https://singhstagram-test.vercel.app', 'http://localhost:5173'],
     credentials:true,   
 }))
 app.use(express.json({limit: "16kb"}))
